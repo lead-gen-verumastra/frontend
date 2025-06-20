@@ -1,0 +1,52 @@
+$bg-primary: #0f1419;
+$bg-secondary: #1e2d3a;
+$bg-tertiary: #2a3f4f;
+$text-primary: #e6f3ff;
+$text-secondary: #b8dff0;
+$text-muted: #4fd1c7;
+$border-color: #374a5c;
+$accent-color: #14b8a6;
+$hover-bg: #253441;
+$active-bg: #2f4353;
+$gradient-start: #06b6d4;
+$gradient-end: #0891b2;
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin button-reset {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+
+@mixin scrollbar {
+  &::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 2px;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+  }
+}
